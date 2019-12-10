@@ -24,7 +24,7 @@ namespace UnrealBuildTool.Rules
         public Haptico(ReadOnlyTargetRules Target) : base(Target)
         {
             PrivateIncludePaths.Add("Haptico/Private");
-            PublicIncludePaths.Add("Haptico/Public");
+            PrivatePCHHeaderFile = "Public/Haptico.h";
 
             PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "HAP" });
             PrivateDependencyModuleNames.AddRange(new string[] { "Core" });
